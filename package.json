@@ -1,0 +1,19 @@
+{
+  "name": "weddingsite",
+  "version": "1.0.0",
+  "description": "Wedding site for Lisa and Dan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabesnider/WeddingSite.git"
+  },
+  "author": "Gabe Snider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabesnider/WeddingSite/issues"
+  },
+  "homepage": "https://github.com/gabesnider/WeddingSite#readme"
+}
