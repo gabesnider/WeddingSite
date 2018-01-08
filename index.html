@@ -2,48 +2,50 @@
 <html>
 <head>
   <title>Lisa & Dan</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/heart.png" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- jQuery library -->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Bootstrap library -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
-  <script src="dist/js/smooth-scroll.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
-<!-- <div>
-  <nav class="navbar navbar-inverse none">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#home">Lisa & Dan</a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#story">Story</a></li>
-          <li><a href="#venue">Venue</a></li>
-          <li><a href="#events">Events</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div> -->
+  <div class="cover" id="cover">
+    <div class="navbar navbar-inverse navbar-static-top" id="nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#cover">Home</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#events">Events</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </div><!--/.navbar -->
 
-  <div class="lisaanddancover">
-    <p id="topdate" class="fade-in.one">OCTOBER 20, 2018</p>
-    <p id="firsttext">Lisa & Dan</p>
+    <p id="firsttext">Lisa and Dan</p>
   </div>
 
   <div id="story">
-    <p>
+    <h1 style="margin: 0px;">How they met</h1>
+    <p id="storytext">
       One sweltering August night, two young Jews swiped right.
       They met for dinner,
       And thought, “this one might be the winner.”
@@ -59,7 +61,43 @@
 
   <div id="events">
   </div>
-
 </body>
+
+<script>
+$(document).ready(function() {
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function() {
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+/* affix the navbar after scroll below header */
+$('#nav').affix({
+      offset: {
+        top: $('.cover').height()-$('#nav').height()
+      }
+});
+
+/* highlight the top nav as scrolling occurs */
+$('body').scrollspy({ target: '#nav' })
+
+/* smooth scrolling for scroll to top */
+$('.scroll-top').click(function(){
+  $('body,html').animate({scrollTop:0},1000);
+})
+
+/* smooth scrolling for nav sections */
+$('#nav .navbar-nav li>a').click(function(){
+  var link = $(this).attr('href');
+  var posi = $(link).offset().top;
+  $('body,html').animate({scrollTop:posi},700);
+});
+</script>
 
 </html>
