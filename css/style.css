@@ -1,3 +1,15 @@
+.cover {
+  background-image: url("../images/lisadanbutton.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  animation-name: fadein;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+}
+
 #story {
   background-color: white;
   padding: 100px;
@@ -8,7 +20,7 @@
 #venue {
   height: 400px;
   width: 100%;
-  background-color: #EFE4FF;
+  background-color: lightgray;
 }
 
 #events {
@@ -17,25 +29,10 @@
   background-color: white;
 }
 
-#mapid {
+#registry {
   height: 400px;
-}
-
-#menu {
-	position:fixed;
-	top:0px;
-	width:100%;
-	height:75px;
-	background-color:#DDDDDD;
-	color: #FFFFFF;
-	z-index:9999;
-	display: none;
-}
-
-#storylink {
-  padding-top: 20px;
-  color: white;
-  text-align: center;
+  width: 100%;
+  background-color: lightgray;
 }
 
 #firsttext {
@@ -47,30 +44,13 @@
   opacity: 0.8;
   transform: translate(-50%, -50%);
   font-size: 80px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: 200px;
-  /*-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-  /*-moz-animation: fadein 3s; /* Firefox < 16 */
-  /*-ms-animation: fadein 3s; /* Internet Explorer */
-  /*-o-animation: fadein 3s; /* Opera < 12.1 */
-  /*animation: fadein 3s;*/
 }
 
 #storytext {
   text-align: left;
   font-family: 'Josefin Sans', sans-serif;
-}
-
-.cover {
-  background-image: url("../images/button.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  width: 100%;
-  animation-name: fadein;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1s;
-  animation-fill-mode:forwards;
 }
 
 @-webkit-keyframes fadein {
@@ -82,24 +62,20 @@
   }
 }
 
-header {
-    height:100%;
-    min-height:500px;
-}
-
-#wrap > .container {
-  padding: 60px 15px 0;
-}
-.container .credit {
-  margin: 20px 0;
-}
-
-#topNav {
-    z-index:-1;
-}
-
 #nav {
   width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav a {
+  color: white;
+  opacity: 0.8;
+}
+
+#nav li a:hover {
+  color: gray;
 }
 
 #nav.affix-top {
@@ -116,27 +92,27 @@ header {
    position: fixed;
    top: 0;
    z-index:10;
-   -webkit-transition: all .6s ease-in-out;
+   background-color: #cb9286;
+}
+
+#nav.affix li a {
+  color: black;
+}
+
+
+#nav.affix li a:hover {
+  color: lightgray;
+}
+
+
+#nav.affix li a:active {
+  color: blue;
 }
 
 @media (min-width: 767px) {
   .navbar-nav.nav-justified > li{
       float:none;
   }
-}
-
-.navbar-nav {
-  margin: 1px 1px;
-}
-
-.navbar-toggle {
-    outline:0;
-}
-
-@media (max-width: 768px) {
-    header {
-
-    }
 }
 
 .scroll-top {
@@ -150,6 +126,6 @@ header {
    border-top-right-radius:3px;
 }
 
-.scroll-top a:link,.scroll-top a:visited {
-  color:#222;
+h1 {
+  margin: 0px;
 }
