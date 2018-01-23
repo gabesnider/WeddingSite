@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Lisa & Dan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="images/heart.png" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,28 +20,31 @@
 </head>
 
 <body>
-  <div class="navbar navbar-default" id="nav">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#story">Story</a></li>
-          <li><a href="#venue">Venue</a></li>
-          <h1 class="navbar-brand" href="#">October 20, 2018</h1>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#registry">Registry</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
   <div class="cover" id="cover">
-    <p id="firsttext">Lisa and Dan</p>
+    <div class="navbar navbar-default navbar-xs navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" onclick="openNav()">menu</button>
+        </div>
+          <ul class="nav navbar-nav navbar-xs navbar-collapse collapse">
+            <li><a href="#story">Story</a></li>
+            <li><a href="#venue">Venue</a></li>
+            <li><a href="#">Stay</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#registry">Registry</a></li>
+          </ul>
+    </div>
+    <!-- because i was rushed -->
+    <div id="nav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul class="overlay-content">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#">Accomodations</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#registry">Registry</a></li>
+      </ul>
+    </div>
+    <!-- <p id="firsttext">Lisa and Dan</p> -->
   </div>
 
   <div id="story">
@@ -67,16 +71,16 @@
 </body>
 
 <script>
-/* affix the navbar after scroll below header */
-$('#nav').affix({
-      offset: {
-        top: $('.cover').height()-54
-      }
-});
-
 /* highlight the top nav as scrolling occurs */
 // $('body').scrollspy({ target: '#nav' })
 
+function openNav() {
+    document.getElementById("nav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("nav").style.height = "0%";
+}
 
 /* smooth scrolling for scroll to top */
 $('.scroll-top').click(function(){
@@ -84,10 +88,18 @@ $('.scroll-top').click(function(){
 })
 
 /* smooth scrolling for nav sections */
-$('#nav .navbar-nav li>a').click(function(){
+$('.navbar-xs .navbar-nav li>a').click(function(){
   var link = $(this).attr('href');
   var posi = $(link).offset().top;
   $('body,html').animate({scrollTop:posi},700);
+  closeNav();
+});
+
+$('.overlay li>a').click(function(){
+  var link = $(this).attr('href');
+  var posi = $(link).offset().top;
+  $('body,html').animate({scrollTop:posi},700);
+  closeNav();
 });
 </script>
 
