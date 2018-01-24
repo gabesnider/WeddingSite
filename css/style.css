@@ -22,7 +22,6 @@
 }
 
 #story {
-  background-color: white;
   margin: none;
 }
 
@@ -36,6 +35,10 @@
   margin-top: 10px;
 }
 
+.special{
+  color: rgba(36, 6, 55, 0.8);
+}
+
 #menu-button{
   background-color: white;
   opacity: 0.5;
@@ -43,13 +46,37 @@
 }
 
 .even-bg-swatch{
-  width:100%;
   background-color:lightgray;
+  z-index:1;
 }
 
 .odd-bg-swatch{
-  width:100%;
   background-color:white;
+  z-index:1;
+}
+
+
+/*#venue{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#venue > h1, p, img{
+  align-self: flex-start;
+  display: flex;
+}
+*/
+
+#arboretum,
+#hotel{
+  padding-left: 48px;
+  width: 333px;
+}
+
+#hotel{
+  height: 200px;
+  padding-bottom: 30px;
 }
 
 .cursive {
@@ -78,6 +105,16 @@
   font-size: 16px;
   text-align: justify;
   padding-bottom: 30px;
+  padding-left: 0px;
+}
+
+#venue-firsttext{
+  margin: 0;
+  padding: 0;
+}
+
+#venue-secondtext{
+  text-align: left;
 }
 
 @-webkit-keyframes fadein {
