@@ -25,6 +25,13 @@
   margin: none;
 }
 
+#registry,
+#story,
+#vents{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 #story h1,
 #venue h1,
 #vents h1,
@@ -33,6 +40,25 @@
   padding: 30px 0 15px;
   color: #240637;
   margin-top: 10px;
+}
+
+#stay img{
+  height: 300px;
+  width: 450px;
+}
+
+#datetext{
+  font-size: 45px;
+  padding:3px 0;
+  margin-top:3px;
+}
+
+#datetext > p{
+  padding-top:3px;
+}
+
+#datetext:hover{
+  background-color:transparent;
 }
 
 .special{
@@ -55,28 +81,22 @@
   z-index:1;
 }
 
-
-/*#venue{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#venue > h1, p, img{
-  align-self: flex-start;
-  display: flex;
-}
-*/
-
-#arboretum,
-#hotel{
+#arboretum{
   padding-left: 48px;
-  width: 333px;
+  width: 400px;
+  margin-top: -50px;
 }
 
-#hotel{
-  height: 200px;
+#hotel,
+#dancing{
   padding-bottom: 30px;
+}
+#carousel{
+  height: 800px;
+}
+
+#dancing{
+  height: 700px;
 }
 
 .cursive {
@@ -185,6 +205,10 @@
   background-color: #240637;
 }
 
+.navbar-xs .navbar-nav > li{
+  padding: 8.25px 0;
+}
+
 .navbar-xs .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -193,8 +217,7 @@
 }
 
 .navbar-xs .navbar-nav li:hover {
-  background-color: white;
-  color: #240637;
+  color: white;
 }
 
 .navbar-toggle {

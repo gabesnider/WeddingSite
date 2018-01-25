@@ -26,13 +26,13 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" onclick="openNav()">menu</button>
         </div>
-          <ul class="nav navbar-nav navbar-xs navbar-collapse collapse">
-            <li><a href="#story">Story</a></li>
-            <li><a href="#venue">Venue</a></li>
-            <li><a href="#stay">Hotel</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#registry">Registry</a></li>
-            <li><a href="#photos">Photos</a></li>
+          <ul style="height:110px" class="nav navbar-nav navbar-xs navbar-collapse collapse">
+            <li style="padding: 14px; margin: 0"><a href="#story">Story</a></li>
+            <li style="padding: 14px; margin: 0"><a href="#venue">Venue</a></li>
+            <li style="padding: 14px; margin: 0"><a href="#stay">Hotel</a></li>
+            <li class="cursive" id="datetext" style="padding: 0; margin: 0"><p style="color:white; margin-bottom:0">October 20, 2018</p></li>
+            <li style="padding: 14px; margin: 0"><a href="#registry">Registry</a></li>
+            <li style="padding: 14px; margin: 0"><a href="#photos">Photos</a></li>
           </ul>
     </div>
     <!-- because i was rushed -->
@@ -42,7 +42,6 @@
         <li><a href="#story">Story</a></li>
         <li><a href="#venue">Venue</a></li>
         <li><a href="#stay">Accommodations</a></li>
-        <li><a href="#events">Events</a></li>
         <li><a href="#registry">Registry</a></li>
       </ul>
     </div>
@@ -52,12 +51,15 @@
   <div class="even-bg-swatch">
     <div class="container" id="story">
       <h1 class="cursive">The Story<small> how we met</small></h1>
-      <p class="innertext">
+      <div class="row"></div>
+      <p class="innertext col-md-3 col-sm-12 col-xs-12">
         One sweltering August night, <br>
         Two young Jews swiped right. <br>
         They met for drinks and dinner, <br>
         And thought, this one might be the winner.<br><br>
-        The conversation was easy and they made each other laugh. Dinner dates turned into basketball, kayaking, hiking in Shenandoah, and most recently, an Italian adventure that led to why you&#39;re all on this website today.<br><br>
+      </p>
+        <img src="images/dancing.jpg" id="dancing" class="img-circle img-responsive col-md-5 col-sm-12 col-xs-12" alt="Lisa Dan-cing">
+        <p class="innertext col-md-3 col-sm-12 col-xs-12"> The conversation was easy and they made each other laugh. Dinner dates turned into basketball, kayaking, hiking in Shenandoah, and most recently, an Italian adventure that led to why you&#39;re all on this website today.<br><br>
         We are delighted to be sharing our wedding weekend with you all and look forward to writing the rest of the story together!
       </p>
     </div>
@@ -67,7 +69,7 @@
     <div class="container" id="venue">
       <div class="row">
         <h1 class="cursive">Venue<small> the National Arboretum</small></h1>
-        <p class="innertext col-md-7" id="venue-firsttext">The National Arboretum is an oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the county. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot.<br><br>
+        <p class="innertext col-md-7 col-sm-12 col-xs-12" id="venue-firsttext">The National Arboretum is an oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the county. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot.<br><br>
         For more information, please visit <a href="https://www.nps.gov/nr/travel/wash/dc94.htm">The National Park Service website</a>
        </p>
         <p class="innertext col-md-5" id="venue-secondtext"><img class="img-responsive" id="arboretum" src="images/arboretum.jpg" alt="Responsive image"></p>
@@ -85,8 +87,8 @@
     <div class="container odd-bg-swatch" id="stay">
       <div class="row">
         <h1 class="cursive">Accommodations<small> where to stay over the weekend</small></h1>
-        <p class="innertext col-md-7"> We have reserved a block of rooms for our guests at the Mayflower Hotel in D.C. from Thursday, October 18 through Sunday, October 21.<br><br>To book online, please use this link: <a href="https://aws.passkey.com/e/49541139">https://aws.passkey.com/e/49541139</a>.<br><br>To book by phone, call toll free <span class="special">877-212-5752</span> and reference the Snider Jacobson Wedding.</p>
-        <img class="img-responsive col-md-5" id="hotel" src="images/mayflower-hotel.jpg" alt="Responsive image"/>
+        <p class="innertext col-md-7 col-sm-12 col-xs-12"> We have reserved a block of rooms for our guests at the Mayflower Hotel in D.C. from Thursday, October 18 through Sunday, October 21.<br><br>To book online, please use this link: <a href="https://aws.passkey.com/e/49541139">https://aws.passkey.com/e/49541139</a>.<br><br>To book by phone, call toll free <span class="special">877-212-5752</span> and reference the Snider Jacobson Wedding.</p>
+       <img class="img-responsive col-md-5 col-xs-12 col-sm-12 img-circle" src="images/mayflower-hotel.jpg">
       </div>
     </div>
   </div>
@@ -94,13 +96,55 @@
   <div class="even-bg-swatch">
     <div class="container" id="registry">
       <h1 class="cursive">Our Wedding Registry<small> where we have registered</small></h1>
-      <a href="https://www.crateandbarrel.com/gift-registry/registrant-list/5773860" target="_blank"><img class="img-responsive col-md-4" src="images/crate-and-barrel.png" class="col-md-4" alt="Responsive image"></a>
-      <a href="https://www.bloomingdales.com/registry/wedding/guest/?registryId=6867137" target="_blank"><img class="img-responsive col-md-4" src="images/bloomingdales.png" class="img-responsive col-md-4" alt="Responsive image"></a>
-      <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=545445963&eventType=Wedding&pwsurl=" target="_blank"><img src="images/bed-bath-and-beyond.png" class="img-responsive col-md-4" alt="Responsive image"></a>
+      <div class="row">
+        <a href="https://www.crateandbarrel.com/gift-registry/registrant-list/5773860" target="_blank"><img src="images/crate-and-barrel.png" class="col-md-offset-1 col-md-3 col-sm-12 col-xs-12" alt="Responsive image"></a>
+        <a href="https://www.bloomingdales.com/registry/wedding/guest/?registryId=6867137" target="_blank"><img src="images/bloomingdales.png" class="col-md-3 col-sm-12 col-xs-12" alt="Responsive image"></a>
+        <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=545445963&eventType=Wedding&pwsurl=" target="_blank"><img src="images/bed-bath-and-beyond.png" class="col-md-3 img-responsive col-sm-12 col-xs-12" alt="Responsive image"></a>
+      </div>
     </div>
   </div>
 
-  <div class="even-bg-swatch">
+<div class="odd-bg-swatch">
+  <div class="container" id="photos">
+  <h1 class="cursive">Photos</h1>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" id="carousel">
+    <div class="col-xs-12 col-sm-12 item">
+      <img style="height: 900px; padding:0 200px" 
+      src="images/dancing.jpg" alt="Lisa Dan-cing">
+    </div>
+
+    <div class="col-xs-12 col-sm-12 item">
+      <img style="height: 900px; padding:0 200px" src="images/cherry-blossoms.jpg" alt="Cherry Blossoms">
+    </div>
+
+    <div class="active col-xs-12 col-sm-12 item">
+      <img src="images/cooking-class.jpg" alt="Cooking Class">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
+
+  <div class="odd-bg-swatch">
     <div class="container">
       <p class="block-letters" style="text-align:center">Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by Gabe and Lisa Snider</p>
     </div>
