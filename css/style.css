@@ -22,8 +22,14 @@
 }
 
 #story {
-  background-color: white;
   margin: none;
+}
+
+#registry,
+#story,
+#vents{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #story h1,
@@ -36,6 +42,29 @@
   margin-top: 10px;
 }
 
+#stay img{
+  height: 300px;
+  width: 450px;
+}
+
+#datetext{
+  font-size: 45px;
+  padding:3px 0;
+  margin-top:3px;
+}
+
+#datetext > p{
+  padding-top:3px;
+}
+
+#datetext:hover{
+  background-color:transparent;
+}
+
+.special{
+  color: rgba(36, 6, 55, 0.8);
+}
+
 #menu-button{
   background-color: white;
   opacity: 0.5;
@@ -43,13 +72,31 @@
 }
 
 .even-bg-swatch{
-  width:100%;
   background-color:lightgray;
+  z-index:1;
 }
 
 .odd-bg-swatch{
-  width:100%;
   background-color:white;
+  z-index:1;
+}
+
+#arboretum{
+  padding-left: 48px;
+  width: 400px;
+  margin-top: -50px;
+}
+
+#hotel,
+#dancing{
+  padding-bottom: 30px;
+}
+#carousel{
+  height: 800px;
+}
+
+#dancing{
+  height: 700px;
 }
 
 .cursive {
@@ -78,6 +125,16 @@
   font-size: 16px;
   text-align: justify;
   padding-bottom: 30px;
+  padding-left: 0px;
+}
+
+#venue-firsttext{
+  margin: 0;
+  padding: 0;
+}
+
+#venue-secondtext{
+  text-align: left;
 }
 
 @-webkit-keyframes fadein {
@@ -148,6 +205,10 @@
   background-color: #240637;
 }
 
+.navbar-xs .navbar-nav > li{
+  padding: 8.25px 0;
+}
+
 .navbar-xs .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -156,8 +217,7 @@
 }
 
 .navbar-xs .navbar-nav li:hover {
-  background-color: white;
-  color: #240637;
+  color: white;
 }
 
 .navbar-toggle {
