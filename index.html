@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pinyon+Script|Playfair+Display" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pinyon+Script|Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
@@ -24,85 +24,82 @@
   <div class="cover" id="cover">
     <div class="navbar navbar-default navbar-xs navbar-fixed-top">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" onclick="openNav()">menu</button>
+          <button type="button" id="togglebutton" class="navbar-toggle" onclick="openNav()">menu</button>
         </div>
           <ul class="nav navbar-nav navbar-xs navbar-collapse collapse">
             <li><a href="#story">Story</a></li>
             <li><a href="#venue">Venue</a></li>
-            <li><a href="#stay">Stay</a></li>
-            <li><a href="#events">Events</a></li>
+            <li><a href="#accommodations">Accomodations</a></li>
             <li><a href="#registry">Registry</a></li>
+            <li><a href="#photos">Photos</a></li>
           </ul>
     </div>
-    <!-- because i was rushed -->
     <div id="nav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <ul class="overlay-content">
         <li><a href="#story">Story</a></li>
         <li><a href="#venue">Venue</a></li>
-        <li><a href="#stay">Accomodations</a></li>
-        <li><a href="#events">Events</a></li>
+        <li><a href="#accomodations">Accomodations</a></li>
         <li><a href="#registry">Registry</a></li>
+        <li><a href="#photos">Photos</a></li>
       </ul>
     </div>
-    <p id="firsttext">Lisa and Dan</p>
+    <div id="firsttext">
+      <p>Lisa and Dan</p>
+    </div>
   </div>
-
+<div id="content">
   <div class="container" id="story">
-    <h1 class="cursive">The Story<small> how we met</small></h1>
+    <img src="images/jefferson.jpg" class="img-responsive curve" />
+    <h1 class="cursive">Story</h1>
     <p class="innertext">
-      One sweltering August night, <br>
-      Two young Jews swiped right. <br>
-      They met for drinks and dinner, <br>
-      And thought, this one might be the winner.<br><br>
+      One sweltering August night,<br>
+      Two young Jews swiped right.<br>
+      They met for drinks and dinner,<br>
+      And thought, this one might be the winner.<br>
       The conversation was easy and they made each other laugh. Dinner dates turned into basketball, kayaking, hiking in Shenandoah, and most recently, an Italian adventure that led to why you&#39;re all on this website today.<br><br>
       We are delighted to be sharing our wedding weekend with you all and look forward to writing the rest of the story together!
     </p>
   </div>
 
-  <div class="even-bg-swatch">
     <div class="container" id="venue">
-      <h1 class="cursive">Venue<small> the National Arboretum</small></h1>
-      <p class="innertext">The National Arboretum is an oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the county. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot.<br><br>
-      For more information, please visit <a href="https://www.nps.gov/nr/travel/wash/dc94.htm">The National Park Service website</a>
-      <img class="img-responsive" src="images/arboretum.jpg" alt="Responsive image">
-</p>
+      <img src="images/arboretum1.jpg" class="curve" alt="Responsive image">
+      <h1 class="cursive">Venue</h1>
+      <p class="innertext">
+        The National Arboretum is an oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the country. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot!<br><br>
+      </p>
     </div>
-  </div>
 
-  <div class="odd-bg-swatch">
-    <div class="container" id="vents">
-      <h1 class="cursive">Events<small> where things will take place</small></h1>
+    <div class="container" id="accommodations">
+      <img src="images/mayflower.jpg" class="img-responsive curve"/>
+      <h1 class="cursive">Accommodations</h1>
+      <p class="innertext">
+        Mayflower Hotel<br>
+        Thursday, October 18th - Sunday, October 21st<br>
+        <a href="https://aws.passkey.com/e/49541139">Click to book</a><br>
+        or call (877)-212-5752 and reference the Snider Jacobson wedding.
+      </p>
     </div>
-  </div>
 
-  <div class="even-bg-swatch">
-    <div class="container" id="stay">
-      <h1 class="cursive">Accommodations<small> where to stay over the weekend</small></h1>
-    </div>
-  </div>
 
-  <div class="odd-bg-swatch">
     <div class="container" id="registry">
-      <h1 class="cursive">Registry<small> where we have registered</small></h1>
-      <a href="https://www.crateandbarrel.com/gift-registry/registrant-list/5773860" target="_blank"><img class="img-responsive col-md-4" src="images/crate-and-barrel.png" class="col-md-4" alt="Responsive image"></a>
-      <a href="https://www.bloomingdales.com/registry/wedding/guest/?registryId=6867137" target="_blank"><img class="img-responsive col-md-4" src="images/bloomingdales.png" class="img-responsive col-md-4" alt="Responsive image"></a>
-      <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=545445963&eventType=Wedding&pwsurl=" target="_blank"><img src="images/bed-bath-and-beyond.png" class="img-responsive col-md-4" alt="Responsive image"></a>
+      <h1 class="block-letters">Registry</h1>
+      <a href="https://www.crateandbarrel.com/gift-registry/lisa-snider-and-daniel-jacobson/r5773860"><img class="img-responsive col-sm-4" src="images/crate-and-barrel.png" alt="Responsive image"></a>
+      <a href="https://www.bloomingdales.com/registry/wedding/guest/?registryId=6867137"><img class="img-responsive col-sm-4" src="images/bloomingdales.png" alt="Responsive image"></a>
+      <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=545445963&eventType=Wedding&pwsurl="><img src="images/bed-bath-and-beyond.png" class="img-responsive col-sm-4" alt="Responsive image"></a>
     </div>
-  </div>
-
+</div>
 </body>
 
 <script>
-/* highlight the top nav as scrolling occurs */
-// $('body').scrollspy({ target: '#nav' })
-
 function openNav() {
     document.getElementById("nav").style.height = "100%";
+    document.getElementById("togglebutton").style.opacity = 0;
 }
 
 function closeNav() {
     document.getElementById("nav").style.height = "0%";
+    document.getElementById("togglebutton").style.opacity = 1;
 }
 
 /* smooth scrolling for scroll to top */
@@ -113,7 +110,7 @@ $('.scroll-top').click(function(){
 /* smooth scrolling for nav sections */
 $('.navbar-xs .navbar-nav li>a').click(function(){
   var link = $(this).attr('href');
-  var posi = $(link).offset().top;
+  var posi = $(link).offset().top - 35;
   $('body,html').animate({scrollTop:posi},700);
   closeNav();
 });
