@@ -16,110 +16,160 @@
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pinyon+Script|Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
   <div class="cover" id="cover">
     <div class="navbar navbar-default navbar-xs navbar-fixed-top">
-        <div class="navbar-header">
-          <button type="button" id="togglebutton" class="navbar-toggle" onclick="openNav()">menu</button>
-        </div>
-          <ul class="nav navbar-nav navbar-xs navbar-collapse collapse">
-            <li><a href="#story">Story</a></li>
-            <li><a href="#venue">Venue</a></li>
-            <li><a href="#accommodations">Accomodations</a></li>
-            <li><a href="#registry">Registry</a></li>
-            <li><a href="#photos">Photos</a></li>
-          </ul>
+      <div class="navbar-header">
+        <button type="button" id="togglebutton" class="navbar-toggle" onclick="openNav()">menu</button>
+      </div>
+      <ul class="nav navbar-nav navbar-xs navbar-collapse collapse">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#ceremony">Ceremony</a></li>
+        <li><a href="#accommodations">Accomodations</a></li>
+        <li><a href="#registry">Registry</a></li>
+      </ul>
     </div>
     <div id="nav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <ul class="overlay-content">
         <li><a href="#story">Story</a></li>
         <li><a href="#venue">Venue</a></li>
+        <li><a href="#ceremony">Ceremony</a></li>
         <li><a href="#accomodations">Accomodations</a></li>
         <li><a href="#registry">Registry</a></li>
-        <li><a href="#photos">Photos</a></li>
       </ul>
     </div>
     <div id="firsttext">
-      <p>Lisa and Dan</p>
+      <div class="text-container">
+        <p class="cursive" id="names">Lisa and Dan</p>
+      </div>
+      <br>
+      <div class="text-container">
+        <p class="block-letters" id="date">October 20th, 2018</p>
+      </div>
     </div>
   </div>
-<div id="content">
-  <div class="container" id="story">
-    <img src="images/jefferson.jpg" class="img-responsive curve" />
-    <h1 class="cursive">Story</h1>
-    <p class="innertext">
-      One sweltering August night,<br>
-      Two young Jews swiped right.<br>
-      They met for drinks and dinner,<br>
-      And thought, this one might be the winner.<br>
-      The conversation was easy and they made each other laugh. Dinner dates turned into basketball, kayaking, hiking in Shenandoah, and most recently, an Italian adventure that led to why you&#39;re all on this website today.<br><br>
-      We are delighted to be sharing our wedding weekend with you all and look forward to writing the rest of the story together!
-    </p>
-  </div>
+
+  <div id="content">
+    <div class="container" id="story">
+      <div class="img-container">
+        <img src="images/1.jpg" class="img-responsive firstpicture" id="storyimage"/>
+      </div>
+      <h1 class="cursive">Our Story</h1>
+      <div class="text-container">
+      <p class="innertext">
+        One sweltering August night,<br>
+        Two young Jews swiped right.<br>
+        They met for drinks and dinner,<br>
+        And thought, this one might be the winner.<br>
+        The conversation was easy and we made each other laugh.<br>Dinner dates turned into basketball, kayaking, hiking in Shenandoah, and most recently, an Italian adventure that led to why you&#39;re on this website today.<br>
+        We are delighted to be sharing our wedding weekend with you and look forward to writing the rest of the story together!
+      </p>
+    </div>
+    </div>
 
     <div class="container" id="venue">
-      <img src="images/arboretum1.jpg" class="curve" alt="Responsive image">
-      <h1 class="cursive">Venue</h1>
+      <div class="img-container">
+        <img src="images/arboretum.jpg" class="img-responsive curve picture" alt="Responsive image">
+      </div>
+      <h1 class="cursive">Wedding Venue</h1>
       <p class="innertext">
-        The National Arboretum is an oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the country. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot!<br><br>
+        The National Arboretum is a 446 acre oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the country. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot!
+      </p>
+    </div>
+
+    <div class="container" id="ceremony">
+      <div class="img-container">
+        <img src="images/ceremony.jpg" class="img-responsive"/>
+      </div>
+      <h1 class="cursive">Ceremony</h1>
+      <p class="innertext">
+        <b>5:00 pm</b><br>
+        Introduction Garden, National Arboretum<br>
+        Cocktails, dinner, and dancing to follow<br>
+        Transportation will be provided to and from The Mayflower Hotel
       </p>
     </div>
 
     <div class="container" id="accommodations">
-      <img src="images/mayflower.jpg" class="img-responsive curve"/>
+      <div class="img-container">
+        <img src="images/mayflower.jpg" class="img-responsive curve"/>
+      </div>
       <h1 class="cursive">Accommodations</h1>
       <p class="innertext">
-        Mayflower Hotel<br>
+        <b>The Mayflower Hotel</b><br>
+        1127 Connecticut Ave NW<br>
+        Washington, DC 20036<br>
         Thursday, October 18th - Sunday, October 21st<br>
-        <a href="https://aws.passkey.com/e/49541139">Click to book</a><br>
+        <a id="hotellink" href="https://aws.passkey.com/e/49541139">Click to book</a><br>
         or call (877)-212-5752 and reference the Snider Jacobson wedding.
       </p>
     </div>
 
-
     <div class="container" id="registry">
-      <h1 class="block-letters">Registry</h1>
+      <h1 class="cursive">Registry</h1>
       <a href="https://www.crateandbarrel.com/gift-registry/lisa-snider-and-daniel-jacobson/r5773860"><img class="img-responsive col-sm-4" src="images/crate-and-barrel.png" alt="Responsive image"></a>
       <a href="https://www.bloomingdales.com/registry/wedding/guest/?registryId=6867137"><img class="img-responsive col-sm-4" src="images/bloomingdales.png" alt="Responsive image"></a>
       <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=545445963&eventType=Wedding&pwsurl="><img src="images/bed-bath-and-beyond.png" class="img-responsive col-sm-4" alt="Responsive image"></a>
     </div>
-</div>
+  </div>
 </body>
 
 <script>
 function openNav() {
-    document.getElementById("nav").style.height = "100%";
-    document.getElementById("togglebutton").style.opacity = 0;
+  document.getElementById("nav").style.height = "100%";
+  document.getElementById("togglebutton").style.opacity = 0;
 }
 
 function closeNav() {
-    document.getElementById("nav").style.height = "0%";
-    document.getElementById("togglebutton").style.opacity = 1;
+  document.getElementById("nav").style.height = "0%";
+  document.getElementById("togglebutton").fadeIn() = 1;
 }
 
 /* smooth scrolling for scroll to top */
-$('.scroll-top').click(function(){
+$('.scroll-top').click(function() {
   $('body,html').animate({scrollTop:0},1000);
 })
 
 /* smooth scrolling for nav sections */
-$('.navbar-xs .navbar-nav li>a').click(function(){
+$('.navbar-xs .navbar-nav li>a').click(function() {
   var link = $(this).attr('href');
   var posi = $(link).offset().top - 35;
   $('body,html').animate({scrollTop:posi},700);
   closeNav();
 });
 
-$('.overlay li>a').click(function(){
+$('.overlay li>a').click(function() {
   var link = $(this).attr('href');
   var posi = $(link).offset().top;
   $('body,html').animate({scrollTop:posi},700);
   closeNav();
+});
+
+var images = new Array ('1', '2', 'mets', 'kiss', 'dancing', 'outside', '4');
+var index = 1;
+
+function rotateImage() {
+  $('#storyimage').fadeOut(function() {
+    $('#storyimage').attr('src', 'images/' + images[index] + '.jpg');
+
+    $('#storyimage').fadeIn(function() {
+      if (index == images.length-1) {
+        index = 0;
+      } else {
+        index++;
+      }
+    });
+  });
+}
+
+$(document).ready(function() {
+  setInterval(rotateImage, 5000);
 });
 </script>
 
