@@ -3,7 +3,7 @@
 <head>
   <title>Lisa & Dan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="images/heart.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/dc.png" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- jQuery library -->
@@ -58,7 +58,11 @@
   <div id="content">
     <div class="container" id="story">
       <div class="img-container">
-        <img src="images/1.jpg" class="img-responsive firstpicture" id="storyimage"/>
+        <img
+        src="images/1.jpg"
+        class="img-responsive firstpicture"
+        id="storyimage"
+        />
       </div>
       <h1 class="cursive">Our Story</h1>
       <div class="text-container">
@@ -79,17 +83,17 @@
       </div>
       <h1 class="cursive">Wedding Venue</h1>
       <p class="innertext">
-        The National Arboretum is a 446 acre oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the country. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot!
+        <b>The National Arboretum</b> is a 446-acre oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the country. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot!
       </p>
     </div>
 
     <div class="container" id="ceremony">
       <div class="img-container">
-        <img src="images/ceremony.jpg" class="img-responsive"/>
+        <img src="images/garden.jpg" class="img-responsive"/>
       </div>
       <h1 class="cursive">Ceremony</h1>
       <p class="innertext">
-        <b>5:00 pm</b><br>
+        5:00 pm<br>
         Introduction Garden, National Arboretum<br>
         Cocktails, dinner, and dancing to follow<br>
         Transportation will be provided to and from The Mayflower Hotel
@@ -102,12 +106,12 @@
       </div>
       <h1 class="cursive">Accommodations</h1>
       <p class="innertext">
-        <b>The Mayflower Hotel</b><br>
+        The Mayflower Hotel<br>
         1127 Connecticut Ave NW<br>
         Washington, DC 20036<br>
         Thursday, October 18th - Sunday, October 21st<br>
         <a id="hotellink" href="https://aws.passkey.com/e/49541139">Click to book</a><br>
-        or call (877)-212-5752 and reference the Snider Jacobson wedding.
+        or call (877)-212-5752 and reference the Snider Jacobson wedding
       </p>
     </div>
 
@@ -117,6 +121,10 @@
       <a href="https://www.bloomingdales.com/registry/wedding/guest/?registryId=6867137"><img class="img-responsive col-sm-4" src="images/bloomingdales.png" alt="Responsive image"></a>
       <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=545445963&eventType=Wedding&pwsurl="><img src="images/bed-bath-and-beyond.png" class="img-responsive col-sm-4" alt="Responsive image"></a>
     </div>
+  </div>
+
+  <div class="block-letters" id="footer">
+    <h5>Created by Gabe Snider ☺︎</h5>
   </div>
 </body>
 
@@ -151,7 +159,7 @@ $('.overlay li>a').click(function() {
   closeNav();
 });
 
-var images = new Array ('1', '2', 'mets', 'kiss', 'dancing', 'outside', '4');
+var images = new Array ('1', '2', 'mets', 'kiss', 'dancing', 'outside1', '4');
 var index = 1;
 
 function rotateImage() {
@@ -170,6 +178,7 @@ function rotateImage() {
 
 $(document).ready(function() {
   setInterval(rotateImage, 5000);
+  setTimeOut
 });
 </script>
 

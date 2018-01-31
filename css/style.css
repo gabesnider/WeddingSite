@@ -1,3 +1,7 @@
+body {
+  background-color: #F5F5F5;
+}
+
 @media (min-width: 768px){
    .navbar-nav{
      text-align:center;
@@ -94,7 +98,6 @@
   animation-timing-function: ease-in-out;
   animation-duration: 0.3s;
   animation-fill-mode:backwards;
-  z-index: 0;
 }
 
 #story p {
@@ -104,16 +107,6 @@
 #story .container {
   margin: 0px;
 }
-/*
-#story .curve {
-  width: 25%; height: auto;
-  min-width: 150px;
-  float: left;
-  margin-right: 4rem;
-  border-radius: 50%;
-  -webkit-shape-outside: circle();
-  shape-outside: circle();
-}*/
 
 #venue {
   width: 100%;
@@ -134,16 +127,6 @@
   line-height: 1.8em;
 }
 
-/*#venue .curve {
-  width: 25%;
-  min-width: 150px;
-  float: left;
-  margin-right: 4rem;
-  border-radius: 50%;
-  -webkit-shape-outside: circle();
-  shape-outside: circle();
-}*/
-
 #accommodations {
   width: 100%;
   background-color: #F5F5F5;
@@ -162,16 +145,6 @@
 #accommodations p {
   line-height: 1.8em;
 }
-/*
-#accommodations .curve {
-  width: 25%; height: auto;
-  min-width: 150px;
-  float: left;
-  margin-right: 4rem;
-  border-radius: 50%;
-  -webkit-shape-outside: circle();
-  shape-outside: circle();
-}*/
 
 #ceremony {
   width: 100%;
@@ -195,6 +168,14 @@
 #registry {
   width: 100%;
   background-color: #F5F5F5;
+}
+
+#footer h5 {
+  background-color: #F5F5F5;
+  font-size: 12px;
+  padding-top: 30px;
+  margin: 0px;
+  text-align: center;
 }
 
 .img-container {
@@ -313,7 +294,7 @@
   border: none;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #240637;
-  z-index: 1000 !important;
+  z-index: 100000000 !important;
 }
 
 .navbar-xs .navbar-nav > li > a {
