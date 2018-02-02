@@ -21,29 +21,29 @@
 </head>
 
 <body>
+  <div class="navbar navbar-default navbar-xs navbar-fixed-top">
+    <div class="navbar-header">
+      <button type="button" id="togglebutton" class="navbar-toggle" onclick="openNav()">menu</button>
+    </div>
+    <ul class="nav navbar-nav navbar-xs navbar-collapse collapse">
+      <li><a href="#story">Story</a></li>
+      <li><a href="#venue">Venue</a></li>
+      <li><a href="#ceremony">Ceremony</a></li>
+      <li><a href="#accommodations">Accomodations</a></li>
+      <li><a href="#registry">Registry</a></li>
+    </ul>
+  </div>
+  <div id="nav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="overlay-content">
+      <li><a href="#story">Story</a></li>
+      <li><a href="#venue">Venue</a></li>
+      <li><a href="#ceremony">Ceremony</a></li>
+      <li><a href="#accomodations">Accomodations</a></li>
+      <li><a href="#registry">Registry</a></li>
+    </ul>
+  </div>
   <div class="cover" id="cover">
-    <div class="navbar navbar-default navbar-xs navbar-fixed-top">
-      <div class="navbar-header">
-        <button type="button" id="togglebutton" class="navbar-toggle" onclick="openNav()">menu</button>
-      </div>
-      <ul class="nav navbar-nav navbar-xs navbar-collapse collapse">
-        <li><a href="#story">Story</a></li>
-        <li><a href="#venue">Venue</a></li>
-        <li><a href="#ceremony">Ceremony</a></li>
-        <li><a href="#accommodations">Accomodations</a></li>
-        <li><a href="#registry">Registry</a></li>
-      </ul>
-    </div>
-    <div id="nav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <ul class="overlay-content">
-        <li><a href="#story">Story</a></li>
-        <li><a href="#venue">Venue</a></li>
-        <li><a href="#ceremony">Ceremony</a></li>
-        <li><a href="#accomodations">Accomodations</a></li>
-        <li><a href="#registry">Registry</a></li>
-      </ul>
-    </div>
     <div id="firsttext">
       <div class="text-container">
         <p class="cursive" id="names">Lisa and Dan</p>
@@ -71,7 +71,7 @@
         Two young Jews swiped right.<br>
         They met for drinks and dinner,<br>
         And thought, this one might be the winner.<br>
-        The conversation was easy and we made each other laugh.<br>Dinner dates turned into basketball, kayaking, hiking in Shenandoah, and most recently, an Italian adventure that led to why you&#39;re on this website today.<br>
+        The conversation was easy and we made each other laugh. Dinner dates turned into basketball, kayaking, hiking in Shenandoah, and most recently, an Italian adventure that led to why you&#39;re on this website today.
         We are delighted to be sharing our wedding weekend with you and look forward to writing the rest of the story together!
       </p>
     </div>
@@ -83,7 +83,7 @@
       </div>
       <h1 class="cursive">Wedding Venue</h1>
       <p class="innertext">
-        <b>The National Arboretum</b> is a 446-acre oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the country. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot!
+        The National Arboretum is a 446-acre oasis in our nation&#39;s capital. Located in Northeast DC and bordered by the Anacostia River to its east, it is one of the largest arboretums in the country. Congress established the grounds in 1927, and after a series of negotiations, 22 34-foot tall sandstone Corinthian columns, vestiges of the Capitol building&#39;s expansion in the 50s, were moved from storage and set atop a knoll, where they remain today. Even though it is open to the public, many people &#8212; including DC natives &#8212; are unaware of the majestic arboretum. We are thrilled to be celebrating our wedding with you in this special spot!
       </p>
     </div>
 
@@ -136,7 +136,7 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("nav").style.height = "0%";
-  document.getElementById("togglebutton").fadeIn() = 1;
+  document.getElementById("togglebutton").style.opacity = 1;
 }
 
 /* smooth scrolling for scroll to top */
@@ -147,7 +147,7 @@ $('.scroll-top').click(function() {
 /* smooth scrolling for nav sections */
 $('.navbar-xs .navbar-nav li>a').click(function() {
   var link = $(this).attr('href');
-  var posi = $(link).offset().top - 35;
+  var posi = $(link).offset().top - 30;
   $('body,html').animate({scrollTop:posi},700);
   closeNav();
 });
