@@ -31,6 +31,7 @@ body {
   }
   #story img,
   #venue img,
+  #welcome img,
   #ceremony img,
   #accommodations img {
     height: 350px !important;
