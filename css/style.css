@@ -108,6 +108,31 @@ body {
   margin: 0px;
 }
 
+#welcome {
+  width: 100%;
+  background-color: #F5F5F5;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#welcome img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  animation-name: fadein;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  animation-fill-mode:backwards;
+}
+
+#welcome p {
+  padding-top: 15px;
+  line-height: 1.8em;
+}
+
+#welcome .container {
+  margin: 0px;
+}
+
 #venue {
   width: 100%;
   background-color: #F5F5F5;
