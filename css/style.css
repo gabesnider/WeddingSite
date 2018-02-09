@@ -63,6 +63,7 @@ body {
 }
 
 #story h1,
+#welcome h1,
 #venue h1,
 #accommodations h1,
 #ceremony h1,
@@ -73,6 +74,7 @@ body {
 
 #story .innertext,
 #venue .innertext,
+#welcome .innertext,
 #accommodations .innertext,
 #ceremony .innertext {
   padding-bottom: 30px;
@@ -125,7 +127,6 @@ body {
 }
 
 #welcome p {
-  padding-top: 15px;
   line-height: 1.8em;
 }
 
